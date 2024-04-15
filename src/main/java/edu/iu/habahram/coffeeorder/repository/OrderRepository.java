@@ -31,6 +31,7 @@ public class OrderRepository {
             }
         }
         // Generating  a unique ID for the receipt
+        //Using hashcode to generate unique ID
         String receiptId = UUID.randomUUID().toString();
         Receipt receipt = new Receipt(receiptId, beverage.getDescription(), beverage.cost());
 
