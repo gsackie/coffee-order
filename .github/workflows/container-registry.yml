@@ -33,6 +33,6 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username gsackie --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/gsackie/Coffee:latest --file Dockerfile .  
-          docker push ghcr.io/gsackie/Coffee:latest 
+          docker build -t ghcr.io/gsackie/coffee:latest --file Dockerfile .  
+          docker push ghcr.io/gsackie/coffee:latest 
 
